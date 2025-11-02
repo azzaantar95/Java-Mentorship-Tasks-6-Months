@@ -1,0 +1,27 @@
+**Main flow**
+
+1. The employee logs in to the intranet portal and selects the link to the Vacation Tracking System (VTS).
+2. VTS retrieves the employee’s vacation history and balances (past 6 months and up to 18 months in the future).
+3. The employee chooses a vacation category with a positive balance (e.g., annual leave).
+4. The system displays a calendar to help the employee choose vacation dates.
+5. The employee selects dates and hours, adds a title and short description, then submits the request.
+6. The system validates the data: if errors exist, they are highlighted for correction.
+7. The employee can correct errors or cancel the request.
+8. If validation passes, the request is saved. If manager approval is required, an email is sent to the manager.
+9. The request status becomes “Pending Approval.”
+10. The manager receives an email and clicks the link to open the pending request in the VTS.
+11. The manager authenticates if needed.
+12. The manager views both personal requests and those awaiting approval.
+13. The manager selects a pending request, reviews details, and chooses to Approve or Reject.
+14. If rejected, the manager must enter a reason.
+15. An email notification is sent to the employee with the result.
+16. The manager can return to the main page, approve other requests, or exit the system.
+
+🧱 Entities (Data Model)
+Entity	Attributes	Description
+Employee	Employee_ID, Name, Email, Department, Role, Leave_Balance	Represents an employee of the company.
+Manager	Manager_ID, Name, Email, Department	Approves or rejects vacation requests.
+Vacation_Request	Request_ID, Employee_ID, Start_Date, End_Date, Hours_Per_Day, Category, Description, Status, Manager_ID, Created_Date	Holds all details of each leave request.
+Leave_Category	Category_ID, Category_Name, Max_Days	Represents types of leaves (Vacation, Sick, Personal).
+Email_Notification	Notification_ID, Receiver_ID, Subject, Message, Status, Sent_Date	Tracks emails sent for approvals or updates.
+System_Log	Log_ID, User_ID, Action, Timestamp, Details	Records all user and system activities.
