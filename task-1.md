@@ -7,7 +7,7 @@ The goal of the Vacation Tracking System (VTS) is to provide employees with a co
 •	Minimize managers’ administrative tasks.
 •	Make the process faster, simpler, and more accurate.
 ________________________________________
-Functional Requirements (The features that the system must do)
+## Functional Requirements (The features that the system must do)
 1.	Implements a flexible rules-based system to validate leave requests.
 2.	Allows manager approval (optional).
 3.	Enables access to previous year’s requests and allows new requests up to 1.5 years in advance.
@@ -19,7 +19,7 @@ Functional Requirements (The features that the system must do)
 9.	Integrates with existing HR legacy systems to retrieve employee data.
 10.	Provides an easy and intuitive user interface.
 ________________________________________
- Non-Functional Requirements
+## Non-Functional Requirements
 (System qualities and technical expectations)
 1.	Ease of Use – The system must be simple and intuitive for all users.
 2.	Integration – Must integrate with the existing intranet portal.
@@ -29,7 +29,7 @@ ________________________________________
 6.	Maintainability – Easy to update, configure, and extend in the future.
 7.	Compatibility – Should run on the company’s existing hardware and middleware.
 ________________________________________
-Constraints
+## Constraints
 (Limitations that restrict how the system is designed or built)
 1.	Must use existing hardware and middleware.
 2.	Must be implemented as part of the existing intranet portal.
@@ -37,7 +37,7 @@ Constraints
 4.	Must interface with legacy HR systems for data retrieval.
 5.	Must be a Web-based application accessible via browsers.
 ________________________________________
- 2. Domain (Define the Problem)
+ 2. ## Domain (Define the Problem)
 Currently, the company’s vacation request process is manual and slow
 employees must submit requests that go through managers and HR clerks, often taking several days.
  Problem to Solve:- 
@@ -47,7 +47,7 @@ Create an automated system that:
 •	Gives employees and managers direct control.
 •	Improves efficiency and reduces processing time and cost.
 ________________________________________
- 3. Actors of the System
+ 3. ## Actors of the System
 Employee:	Submits leave requests, checks request status.
 Manager:	Approves or rejects employee requests.
 HR Staff:	Updates employee data and can override rules when needed.
