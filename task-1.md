@@ -1,4 +1,4 @@
-##Requirements from Ch12 (Vacation Tracking System)
+## Requirements from Ch12 (Vacation Tracking System)
  Vision
 The goal of the Vacation Tracking System (VTS) is to provide employees with a convenient way to manage their own vacation whatever it is annual leave, sick leave, or personal time off without needing to be experts in company or facility leave policies.
  Main Purpose:
