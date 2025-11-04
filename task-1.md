@@ -38,8 +38,8 @@ ________________________________________
 5.	Must be a Web-based application accessible via browsers.
 ________________________________________
  2. ## Domain (Define the Problem)
-Currently, the company’s vacation request process is manual and slow
-employees must submit requests that go through managers and HR clerks, often taking several days.
+Currently, the company’s vacation request process is manual and slow.
+Employees must submit requests that go through managers and HR clerks, often taking several days.
  Problem to Solve:- 
 Create an automated system that:
 •	Simplifies and speeds up leave requests.
