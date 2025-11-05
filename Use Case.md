@@ -11,7 +11,7 @@ Entity Attributes	Description.
 <img width="924" height="750" alt="VTS Flow Chart" src="https://github.com/user-attachments/assets/11efae05-426a-45ce-9f4a-e889d123a1fb" />
 
 ## Sequence Diagram 
-
+// in progress...
 
 ## Pseudocode
 BEGIN ManageVacationRequest
