@@ -7,4 +7,5 @@ Entity Attributes	Description.
 5. **Email_Notification**	Notification_ID, Receiver_ID, Subject, Message, Status, Sent_Date	Tracks emails sent for approvals or updates.
 6. **System_Log**	Log_ID, User_ID, Action, Timestamp, Details	Records all user and system activities.
 
+## Flow Chart
 <img width="924" height="750" alt="VTS Flow Chart" src="https://github.com/user-attachments/assets/11efae05-426a-45ce-9f4a-e889d123a1fb" />
