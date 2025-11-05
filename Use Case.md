@@ -9,3 +9,45 @@ Entity Attributes	Description.
 
 ## Flow Chart
 <img width="924" height="750" alt="VTS Flow Chart" src="https://github.com/user-attachments/assets/11efae05-426a-45ce-9f4a-e889d123a1fb" />
+
+## Sequence Diagram 
+
+
+## Pseudocode
+BEGIN ManageVacationRequest
+    IF Employee is not authenticated THEN
+        DISPLAY "Access Denied"
+        EXIT
+    END IF
+
+    DISPLAY Employee Leave Balance
+
+    INPUT VacationType, StartDate, EndDate, Hours, Description
+
+    IF any field is missing OR invalid THEN
+        DISPLAY ErrorMessage
+        RETURN to Form
+    END IF
+
+    CREATE new VacationRequest
+    SAVE VacationRequest to Database
+
+    IF ManagerApprovalRequired THEN
+        SEND Email to Manager
+        SET Request.Status = "Pending Approval"
+    ELSE
+        SET Request.Status = "Approved"
+        SEND Confirmation Email to Employee
+    END IF
+
+    WAIT for Manager Action
+
+    IF Manager.Approve THEN
+        UPDATE Request.Status = "Approved"
+    ELSE IF Manager.Reject THEN
+        UPDATE Request.Status = "Rejected"
+        RECORD Reason
+    END IF
+
+    SEND Notification Email to Employee
+END
